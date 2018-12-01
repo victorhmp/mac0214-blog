@@ -1,0 +1,21 @@
+---
+title: Plataforma Brains
+date: "2018-11-30"
+---
+
+Meu trabalho na plataforma Brains começou na última semana de julho, refazendo a API da plataforma, feita no semestre passado com Ruby on Rails. O estado em que a API estava dificultava mudanças, devido à rígida estrutura imposta pelo framework utilizado e a o fato de a equipe que a desenvolveu era inexperiente, o que causou inconsistências no código-fonte. Enfim, para a evolução da plataforma, uma refatoração completa era necessária, e com a ajuda de outro membro do USPCodeLab, Leonardo Lana, nos baseamos na funcionalidade e nas especificações do banco de dados que estavam presentes para poder criar uma nova API para substituir a então atual. Escolhemos Node.js e Koa como base para o projeto, o que nos permitiria implementar toda a estrutura do back-end com JavaScript, e como em todos os projetos do USPCodeLab, utilizamos Docker para conteinerização. Além disso, decidimos utilizar uma nova especificação de APIs chamada GraphQL, principalmente pelo desafio técnico e para experiência com o novo padrão.
+
+Durante a última semana de julho e as duas primeiras semanas de agosto, trabalhei exclusivamente na nova API configurando o Prisma, um ORM (Object-relational mapping) para facilitar a interface entre a nova API e o banco de dados PostgreSQL, escrevendo o GraphQL schema, onde especificamos todas as queries e mutations que a API poderá responder e escrevendo seus respectivos resolvers, funções à serem executadas quando as requisições que chegam ao servidor. A API já estava totalmente funcional após essas semanas de trabalho, possibilitando que o desenvolvimento da plataforma avançasse. O tempo de trabalho durante essas semanas foi de 10 horas.
+No mês de setembro, eu e os demais integrantes do time decidimos nos dedicar ao desenvolvimento da plata- forma durante os encontros do dev.boost(), assim poderíamos trabalhar em time de maneira mais organizada, seguindo as prática de métodos ágeis. Durante nosso primeiro e segundo encontros para trabalhar no Brains nos dias 21 e 28 de setembro, trabalhei com o time na organização do nosso kanban, e na implementação da funcionalidade de envio de e-mails pela API. No encontro do dia 21 de setembro, trabalhei durante 4 horas na plataforma, enquanto no dia 28 de setembro trabalhei durante 6 horas.
+
+Após a criação da nova API e da implementação do envio de e-mails, o desenvolvimento do back-end da plataforma se mostrou totalmente funcional, e meu trabalho nos próximos encontros do dev.boost() foram de reparo de eventuais bugs e algumas mudanças incrementais. Essa etapa de trabalho totalizou 15 horas e foi se alternando com o trabalho no novo cliente Web da plataforma.
+
+À partir do dia 05 de outubro, trabalhei na criação do novo cliente da plataforma, originalmente feito utilizando React, e agora migrado para Vue.js. Trabalhei principalmente na página de exibição de um dashboard que mostra o estado atual de um projeto. Nessa página, é possível encontrar todas as informações do seu respectivo projeto, como os membros que compõem a equipe, o nome do projeto, as mensagens que podem ser deixadas por professores, diretores e alunos, e principalmente o objetivo do projeto, a sua justificativa e motivação, entre outros. Esse trabalho foi feito durante os encontros do dev.boost() nos dias 05, 19 e 26 de outubro, totalizando 9 horas de trabalho, sendo distribuída igualmente em 3 horas por encontro do dev.boost().
+
+Por fim, no mês de novembro trabalhei na criação de páginas para mostrar os professores associados à uma dada escola e os usuários com permissões de Master na plataforma, duas páginas simples que faziam requisições à API e mostravam os dados recebidos de forma estruturada em componentes reutilizáveis. Este trabalho totalizou mais 1 hora de desenvolvimento.
+
+A distribuição final das horas de trabalho na plataforma Brains foi a seguinte:
+
+| Nova API     | 25 horas |
+|--------------|----------|
+| Novo cliente | 10 horas |
